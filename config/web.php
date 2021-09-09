@@ -4,6 +4,10 @@ $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
 
 $config = [
+    'bootstrap' => ['debug'],
+        'modules' => [
+            'debug' => 'yii\debug\Module',
+        ],
     'id' => 'basic',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
